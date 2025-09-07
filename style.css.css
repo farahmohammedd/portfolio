@@ -1,21 +1,178 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.links{
-    display: flex;
-    gap: 32px;
+
+body {
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
 }
-.btt{
-    padding: 10px 20px;
-    border-radius: 999px;
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #00bcd4, #2196f3); /* نفس لون الهيرو */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.text{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 40px 16px;
-    
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.navlinks a:hover {
+  color: #ffeb3b; /* لون مختلف عند الهوفر */
+}
+
+.navlinks .icon img {
+  vertical-align: middle;
+}
+
+.email-btn {
+  background: #00bcd4;
+  color: #fff !important;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.email-btn:hover {
+  background: #0097a7;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2196f3;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* ================= EXPERIENCE ================= */
+.exp {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.exp-card {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  width: 180px;
+}
+
+.exp-card h3 {
+  font-size: 28px;
+  color: #2196f3;
+}
+
+.exp-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2196f3;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.skill-card p {
+  font-size: 15px;
+  color: #555;
 }
